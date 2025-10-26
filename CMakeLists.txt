@@ -6,11 +6,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include)
 
-# Додай бібліотеку
+# Додавання бібліотеки
 add_library(calc STATIC src/calculator.cpp)
 
-# Додай виконуваний файл
+# Додавання виконуваного файлу
 add_executable(main src/main.cpp)
 
-# Лінкуй бібліотеку до виконуваного файлу
+# Лінкування бібліотеки до виконуваного файлу
 target_link_libraries(main calc)
